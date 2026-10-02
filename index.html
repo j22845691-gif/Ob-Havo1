@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob-havo Dasturi</title>
+    <!-- Исправлено: корректное подключение CSS -->
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+
+    <!-- Asosiy fon qutisi -->
+    <div class="card">
+        
+        <!-- Qidiruv qismi -->
+        <div class="search">
+            <!-- Исправлено: placeholder вместо content -->
+            <input type="text" placeholder="Shahar nomini kiriting" spellcheck="false">
+            <!-- Исправлено: картинка помещена внутрь кнопки -->
+            <button><img src="images/search.png" alt="Qidiruv"></button>
+        </div>
+
+        <!-- Xatolik xabari (boshida yashirin turadi) -->
+        <div class="error">
+            <p>Noto'g'ri shahar nomi</p>
+        </div>
+
+        <!-- Ob-havo qismi -->
+        <div class="weather">
+            <!-- Исправлено: class вместо simg, убран </img> -->
+            <img class="weather-icon" src="images/rain.png" alt="Ob-havo">
+            <h1 class="temp">22°c</h1>
+            <p class="city">Toshkent</p>
+            
+            <div class="details">
+                <div class="col">
+                    <!-- Исправлено: убраны лишние закрывающие теги -->
+                    <img src="images/humidity.png" alt="Namlik">
+                    <div>
+                        <p class="humidity">64%</p>
+                        <p>Namlik</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="Shamol">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Shamol tezligi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
